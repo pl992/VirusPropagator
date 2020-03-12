@@ -1,0 +1,15 @@
+Simulation details:
+
+2D grid spacexspace representing the space
+
+Each cell of the grid can be contaminated or not contaminated. After dt timesteps a cell is contaminated comes back to be not contaminated
+
+It starts from a population of npeople people with one ninfected.
+
+People are moving through random walks (dispacement defines the size of the motion)
+
+If an infected person passes through a not contaminated cell the cell becomes contaminated, if it's already contaminated the timer of the contamination start over
+
+If a person not infected passes through a contaminated cell has a probability of p_get_infected to get infected
+
+After lifetime timesteps a person is infected is deleted from the list of people (and from the grid)
