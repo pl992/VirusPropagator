@@ -98,7 +98,7 @@ class People:
 T = 1000
 world = World(space)
 population = People(npeople,world)
-filename = 'world{0:04d}'
+filename = 'worlds/world{0:04d}'
 i=0
 while i < T and population.GetInfected() > 0:
     population.MovePeople(world)
