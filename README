@@ -1,4 +1,5 @@
-TODO Let people healing with a probability which decreases exponentially over time
+TODO Let people healing with a probability (decreases exponentially?) over time, similar probability to die and 1-p_die-p_heal
+to be still sick
 
 Simulation details:
 
