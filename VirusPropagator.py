@@ -1,5 +1,7 @@
 import numpy as np
 import os
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
 
 #2D World -> People fluctuating around central points
 #Person with infection leaves infected area for dt
@@ -13,6 +15,26 @@ ninfected = 1
 p_get_infected = .6
 lifetime = 50
 displacement = 3
+
+
+"""
+Function creation movie
+"""
+
+def animate(i,fig,ax):
+    ax.clear()
+    data = np.genfromtxt('worlds/world{0:04d}'.format(i))
+    ax.scatter(data[:,0],data[:,1],c=data[:,2])
+
+def GenerateMovie(filename,nworlds):
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+    anim = animation.FuncAnimation(fig,animate,fargs=(fig,ax),interval=25,frames=nworlds)
+    anim.save(filename,writer='ffmpeg')
+
+"""
+End function creation movie
+"""
 
 class World:
     #Infected area represented by 1, normal area represented by 0
@@ -110,3 +132,4 @@ while i < T and population.GetInfected() > 0:
     population.writePeople(filename.format(i))
     i+=1
     print (i,end='\r')
+GenerateMovie('Movie.mp4',i)
