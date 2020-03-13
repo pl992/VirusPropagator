@@ -1,7 +1,3 @@
-TODO Let people healing with a probability (decreases exponentially?) 
-over time, similar probability to die and 1-p_die-p_heal
-to be still sick
-
 Simulation details:
 
 2D grid spacexspace representing the space
