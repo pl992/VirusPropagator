@@ -6,7 +6,7 @@ At the end of the simulation there are no more infected people and the disease
 disappears. 
 At the end, the remaining people in the lattice never got infected and they will never do
 because no more disease is present (some news are reporting this is the current technique 
-the UK government wants to apply for the new spreading virus [COVID19](https://www.theguardian.com/commentisfree/2020/mar/15/epidemiologist-britain-herd-immunity-coronavirus-covid-19))
+the UK government wants to apply for the new spreading virus [COVID19](https://www.theguardian.com/commentisfree/2020/mar/15/epidemiologist-britain-herd-immunity-coronavirus-covid-19) )
 
 The dots deleted from the lattice can be interpreted in 3 different ways:
 . They got killed by the virus
