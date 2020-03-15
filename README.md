@@ -1,5 +1,5 @@
 <h1> Virus Propagator </h1>
-<h3> Real world interpretation <\h3>
+<h3> Real world interpretation </h3>
 <p>
 This simulator shows how the 'Herd immunity' develops and what is exactly.
 At the end of the simulation there are no more infected people and the disease
