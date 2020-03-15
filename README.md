@@ -47,6 +47,7 @@ probability of p_get_infected to get infected
 
 After lifetime timesteps an infected person is deleted from from the grid
 <h3> Main parameters </h3>
+
 * space: number of cells the 2D lattice contains
 
 * p_get_infected: probability that a dot passing through
